@@ -34,7 +34,7 @@ export default function Header() {
                     <MdOutlineClass size={30} className={isClasses ? selectedTextClass : defaultTextClass} />
                 </Link>
 
-                <a href="mailto:alanmunschy@gmail.com" className={`${buttonClass} mr-4`}>
+                <a href="mailto:alanmunschy@gmail.com" className={`${buttonClass} mr-4 hidden md:inline-flex`}>
                     <p className={defaultTextClass}>Email</p>
                     <RiSendPlaneFill size={30} className={defaultTextClass}/>
                 </a>

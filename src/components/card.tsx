@@ -13,6 +13,8 @@ interface CardProps {
     imgAlts: string[];
     links: { name: string, url: string }[];
     wide?: boolean;
+    caption?: boolean;
+    video?: string;
 }
 
 export default function Card(props: CardProps) {
@@ -47,7 +49,7 @@ export default function Card(props: CardProps) {
             </div>
             {isOpen && (
                 <InfoModal title={props.title} description={props.description} images={props.images} imgAlts={props.imgAlts}
-                           links={props.links} wide={props.wide}
+                           links={props.links} wide={props.wide} caption={props.caption} video={props.video}
                            onClose={closeModal}/>
             )}
         </div>

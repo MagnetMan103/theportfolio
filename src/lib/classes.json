@@ -1,0 +1,76 @@
+[
+  {
+    "title": "MAE 3230: Pneumatic Wrench Dissection",
+    "description": [
+      "We were given a pneumatic impact wrench to dissect in a fluid dynamics context. We produced a video describing the function and fluid dynamic application of the pneumatic wrench. My contributions were dissecting the pneumatic impact wrench, helping with the math to compute the maximum torque, and editing the video. We found that the pneumatic impact wrench could generate torques of up to 900 lb * in, which is comparable to electric drills. \n"
+    ],
+    "images": [
+      "/classes/MAE3230/wrench.png"
+    ],
+    "imgAlts": [
+      "Pneumatic wrench"
+    ],
+    "preview": "/classes/MAE3230/wrench.png",
+    "links": [],
+    "wide": true,
+    "caption": true,
+    "video": "https://www.youtube.com/embed/fv1IlAWsVhk?si=xxrCMEFJGjxVxlfU"
+  },
+  {
+    "title": "MAE 3270: Torque wrench simulation",
+    "description": [
+      "This assignment was done in collaboration with Youngjin Yang. \n\n# Overview \n\n This project required us to design a torque wrench by choosing a material and dimensions to satisfy safety and gauge output requirements. Simulation was done in Ansys to verify our theoretical calculations. \n\n# FEM Analysis Results \n\n ## Dimensions \n\n The torque wrench center was 16 in from the end. It had a width of 1.3 in and a thickness of 0.1 in. Drawings and CAD are below.\n\n## Material Properties\n\nWe used Ti-6Al-4V titanium alloy for the wrench. The key material properties are:\n- Young's Modulus: 16.5 × 10⁶ psi\n- Poisson's Ratio: 0.34\n- Tensile Strength: 135,000 psi\n- Fracture Toughness: 80,000 psi√in\n- Fatigue Strength: 74,000 psi\n\n## Torque Wrench Sensitivity\n\nThe strain gauge has a gauge factor of 2, and we are assuming a half bridge design. Based on the FEM strain, the wrench sensitivity is 1.214 mV/V. This passes the design requirement of an output > 1.0 mV/V\n\n## Strain Gauge Selection\n\nWe chose the Micro Measurements 015LW strain gauge, which is a linear (uniaxial) gauge with a 0.075-inch active length and a gauge factor of 2.0. It fits easily in our design since it needs less than 0.1 inches of space. The small size works well for our application, though a larger gauge would have been easier to install if we had more room."
+    ],
+    "images": [
+      "/classes/MAE3270/cad.png",
+      "/classes/MAE3270/drawing.png",
+      "/classes/MAE3270/diagram.png",
+      "/classes/MAE3270/ansys1.png",
+      "/classes/MAE3270/ansys2.png",
+      "/classes/MAE3270/ansys3.png",
+      "/classes/MAE3270/ansys4.png",
+      "/classes/MAE3270/ansys5.png",
+      "/classes/MAE3270/ansys6.png"
+    ],
+    "imgAlts": [
+      "Torque wrench CAD model",
+      "Torque wrench technical drawing",
+      "Boundary conditions diagram",
+      "ANSYS elastic strain contour",
+      "ANSYS normal stress contour",
+      "ANSYS normal stress contour",
+      "ANSYS deformation contours",
+      "ANSYS detailed stress table",
+      "ANSYS final result preview"
+    ],
+    "preview": "/classes/MAE3270/ansys6.png",
+    "links": [],
+    "wide": true,
+    "caption": true
+  },
+  {
+    "title": "MAE 2250: Le mini hoop",
+    "description": [
+      "Le mini hoop is a mini basketball hoop with an automatic return system powered by 600 rpm motor.",
+      "This was my team project from my mechanical design class, we set out to reduce the friction of having to pick up the basketball after every shot.",
+      "The frame was laser cut with acrylic, the ramp was a laser cut out of wood with a living hinge design (to flex as a ramp), and the flywheels & gears were 3D printed with PLA.",
+      "When fully spun, the flywheels can launch the ball to the person's chest up to ~10 feet.",
+      "We ran into some roadblocks. We wanted to use a motion sensor to turn on the motor when the ball was in the funnel, but it took too long for the flywheels to spin up. So the motor was controlled with an on/off switch. Also, we didn't plan out fully how the electrical components would fit in the assembly, so there was a bit of a mess with wires in the end product."
+    ],
+    "images": [
+      "/lemini/leminiCad.jpg",
+      "/lemini/leMiniAssemble.jpg",
+      "/lemini/leminiRamp.jpg",
+      "/lemini/leminiTopDown.png",
+      "/lemini/LeMiniPreview.jpg"
+    ],
+    "imgAlts": ["Le Mini Preview",
+      "Le Mini Assemble",
+      "Le Mini CAD",
+      "Le Mini Ramp",
+      "Le Mini Top Down"
+    ],
+    "preview": "/lemini/LeMiniPreview.jpg",
+    "links": []
+  }
+  ]

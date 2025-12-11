@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <>
             <div className={'mt-40'}>
-                <p className={'ml-5 text-gray-600'}>Last updated: 12/8/2025</p>
+                <p className={'ml-5 text-gray-600'}>Last updated: 12/11/2025</p>
             </div>
         <div className={"flex flex-row justify-evenly p-5 bg-blue-300 border-t"}>
             <Link href={"mailto:alanmunschy@gmail.com"} target={"_blank"}>

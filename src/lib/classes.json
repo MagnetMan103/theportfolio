@@ -1,5 +1,31 @@
 [
   {
+    "title": "MAE 3260: Simulating a wheeled biped robot",
+    "description": [
+      "This was the final group project for my system dynamics class, where we modeled the dynamics of a wheeled biped robot. The two primary goals were having the robot balance without falling over, and having the robot move to a desired location. I was tasked with simulating our robot control model in Mujoco. A demo video of the final result can be found below, as well as our engineering writeup. The github repo with the simulation code is also attached.\n"
+    ],
+    "images": [
+      "/classes/MAE3260/robot.png"
+    ],
+    "imgAlts": [
+      "Robot in Mujoco simulation"
+    ],
+    "preview": "/classes/MAE3260/robot.png",
+    "links": [
+      {
+        "name": "Engineering Report",
+        "url": "/classes/MAE3260/robot_report.pdf"
+      },
+      {
+        "name": "Github Repo",
+        "url": "https://github.com/MagnetMan103/biped_control"
+      }
+    ],
+    "wide": true,
+    "caption": true,
+    "video": "https://www.youtube.com/embed/kZ9yXSptH3A?si=U4LrUajHumJ_aHPc"
+  },
+  {
     "title": "MAE 3230: Pneumatic Wrench Dissection",
     "description": [
       "We were given a pneumatic impact wrench to dissect in a fluid dynamics context. We produced a video describing the function and fluid dynamic application of the pneumatic wrench. My contributions were dissecting the pneumatic impact wrench, helping with the math to compute the maximum torque, and editing the video. We found that the pneumatic impact wrench could generate torques of up to 900 lb * in, which is comparable to electric drills. \n"

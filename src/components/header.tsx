@@ -29,7 +29,7 @@ export default function Header() {
             </div>
 
             <div className="flex items-center">
-                <Link href="/classes" className={`${buttonClass} mr-12`}>
+                <Link href="/classes" className={`${buttonClass} md:mr-12`}>
                     <p className={isClasses ? selectedTextClass : defaultTextClass}>Class Projects</p>
                     <MdOutlineClass size={30} className={isClasses ? selectedTextClass : defaultTextClass} />
                 </Link>

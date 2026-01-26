@@ -1,5 +1,8 @@
 [
   {
+    "slug": "mae-3260-wheeled-biped",
+    "category": "class",
+    "summary": "Modeled and simulated a wheeled biped robot's dynamics in Mujoco, implementing balance and movement control systems.",
     "title": "MAE 3260: Simulating a wheeled biped robot",
     "description": [
       "This was the final group project for my system dynamics class, where we modeled the dynamics of a wheeled biped robot. The two primary goals were having the robot balance without falling over, and having the robot move to a desired location. I was tasked with simulating our robot control model in Mujoco. A demo video of the final result can be found below, as well as our engineering writeup. The github repo with the simulation code is also attached.\n"
@@ -26,6 +29,9 @@
     "video": "https://www.youtube.com/embed/kZ9yXSptH3A?si=U4LrUajHumJ_aHPc"
   },
   {
+    "slug": "mae-3230-pneumatic-wrench",
+    "category": "class",
+    "summary": "Dissected and analyzed a pneumatic impact wrench in a fluid dynamics context, calculating maximum torque of 900 lb*in.",
     "title": "MAE 3230: Pneumatic Wrench Dissection",
     "description": [
       "We were given a pneumatic impact wrench to dissect in a fluid dynamics context. We produced a video describing the function and fluid dynamic application of the pneumatic wrench. My contributions were dissecting the pneumatic impact wrench, helping with the math to compute the maximum torque, and editing the video. We found that the pneumatic impact wrench could generate torques of up to 900 lb * in, which is comparable to electric drills. \n"
@@ -43,6 +49,9 @@
     "video": "https://www.youtube.com/embed/fv1IlAWsVhk?si=xxrCMEFJGjxVxlfU"
   },
   {
+    "slug": "mae-3270-torque-wrench",
+    "category": "class",
+    "summary": "Designed a titanium torque wrench using FEM analysis in Ansys, achieving strain gauge sensitivity of 1.214 mV/V.",
     "title": "MAE 3270: Torque wrench simulation",
     "description": [
       "This assignment was done in collaboration with Youngjin Yang. \n\n# Overview \n\n This project required us to design a torque wrench by choosing a material and dimensions to satisfy safety and gauge output requirements. Simulation was done in Ansys to verify our theoretical calculations. \n\n# FEM Analysis Results \n\n ## Dimensions \n\n The torque wrench center was 16 in from the end. It had a width of 1.3 in and a thickness of 0.1 in. Drawings and CAD are below.\n\n## Material Properties\n\nWe used Ti-6Al-4V titanium alloy for the wrench. The key material properties are:\n- Young's Modulus: 16.5 × 10⁶ psi\n- Poisson's Ratio: 0.34\n- Tensile Strength: 135,000 psi\n- Fracture Toughness: 80,000 psi√in\n- Fatigue Strength: 74,000 psi\n\n## Torque Wrench Sensitivity\n\nThe strain gauge has a gauge factor of 2, and we are assuming a half bridge design. Based on the FEM strain, the wrench sensitivity is 1.214 mV/V. This passes the design requirement of an output > 1.0 mV/V\n\n## Strain Gauge Selection\n\nWe chose the Micro Measurements 015LW strain gauge, which is a linear (uniaxial) gauge with a 0.075-inch active length and a gauge factor of 2.0. It fits easily in our design since it needs less than 0.1 inches of space. The small size works well for our application, though a larger gauge would have been easier to install if we had more room."
@@ -75,6 +84,9 @@
     "caption": true
   },
   {
+    "slug": "mae-2250-le-mini-hoop",
+    "category": "class",
+    "summary": "Built a mini basketball hoop with automatic ball return using laser-cut acrylic, living hinge ramp, and 3D-printed flywheels.",
     "title": "MAE 2250: Le mini hoop",
     "description": [
       "Le mini hoop is a mini basketball hoop with an automatic return system powered by 600 rpm motor.",
@@ -90,7 +102,8 @@
       "/lemini/leminiTopDown.png",
       "/lemini/LeMiniPreview.jpg"
     ],
-    "imgAlts": ["Le Mini Preview",
+    "imgAlts": [
+      "Le Mini Preview",
       "Le Mini Assemble",
       "Le Mini CAD",
       "Le Mini Ramp",
@@ -99,4 +112,4 @@
     "preview": "/lemini/LeMiniPreview.jpg",
     "links": []
   }
-  ]
+]

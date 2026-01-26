@@ -1,5 +1,8 @@
 [
   {
+    "slug": "le-mini-hoop",
+    "category": "engineering",
+    "summary": "A mini basketball hoop with an automatic return system powered by a 600 rpm motor, featuring laser-cut components and 3D printed flywheels.",
     "title": "Le mini hoop",
     "description": [
       "Le mini hoop is a mini basketball hoop with an automatic return system powered by 600 rpm motor.",
@@ -25,6 +28,9 @@
     "links": []
   },
   {
+    "slug": "fusion-copilot",
+    "category": "engineering",
+    "summary": "A Fusion 360 add-in that uses AI to generate CAD designs from natural language queries.",
     "title": "Fusion Copilot (CAD+AI)",
     "description": [
       "Fusion Copilot is a Fusion add-in where users can enter a query for what they want to build, and the add-in will make the design for them",
@@ -52,6 +58,9 @@
     "wide": true
   },
   {
+    "slug": "ansys-codefest",
+    "category": "engineering",
+    "summary": "Optimized a dwarven bridge design using PyAnsys, reducing cost by 50% through programmatic material and cross-section simulation.",
     "title": "Ansys Codefest",
     "description": [
       "I participated in the 2024 Ansys Codefest where teams had 8 hours to optimize the cost of a dwarven bridge (with 95 nodes).",
@@ -80,6 +89,9 @@
     "wide": true
   },
   {
+    "slug": "realflight-simulations",
+    "category": "engineering",
+    "summary": "Created an accurate RealFlight Evolution model of a 300mph+ drone for software-in-the-loop testing with INAV.",
     "title": "RealFlight Simulations",
     "description": [
       "I added a model of my project team's drone into RealFlight Evolution. I used Blender to abstract our drone's faces so it could be imported into RealFlight. I had to map the geometry and physics to RealFlight, so things like the drone's center of mass and thrust would be realistic.",
@@ -100,6 +112,9 @@
     "wide": true
   },
   {
+    "slug": "road-rage",
+    "category": "webdev",
+    "summary": "Award-winning hackathon game using hand tracking via MediaPipe and OpenCV, rendered in ThreeJS with procedurally generated roads.",
     "title": "Road Rage (CV Game)",
     "description": [
       "This was my team's entry for the 2025 BigRedHacks Hackathon.",
@@ -133,6 +148,9 @@
     "wide": true
   },
   {
+    "slug": "bigredhacks-2024",
+    "category": "webdev",
+    "summary": "2nd place hackathon app that generates personalized songs based on user mood and feelings using React Native and Flask.",
     "title": "BigRedHacks Hackathon",
     "description": [
       "This app (Nocturne) was created for the Big Red Hacks 2024 Hackathon. It lets users pick a mood and type their feelings to generate a song that adapts to their emotions.",
@@ -172,6 +190,9 @@
     ]
   },
   {
+    "slug": "rcareworld-hackathon",
+    "category": "webdev",
+    "summary": "1st place hackathon app helping Alzheimer's patients remember life events through AI-generated stories.",
     "title": "RCareWorld Hackathon",
     "description": [
       "Vividly was created for the RCareWorld 2024 Hackathon. It helps people with alzheimers remember important events in their life by saving important events and images. The app also lets users AI generate a story of a person's life based on the events they have saved. ",
@@ -199,6 +220,9 @@
     ]
   },
   {
+    "slug": "2500words",
+    "category": "webdev",
+    "summary": "Chrome extension for vocabulary learning with instant translations and flashcard review using Google Translate API.",
     "title": "2500words Chrome Extension",
     "description": [
       "2500words allows you to refine your vocabulary in a foreign language. It adds an option on right click to \"Add {word} to 2500words.\" Doing so creates an immediate translation on the page. The word will also be saved for review which can be accessed by clicking on the extension icon.",
@@ -237,6 +261,9 @@
     "wide": true
   },
   {
+    "slug": "debate-flow",
+    "category": "webdev",
+    "summary": "Web app for debate judges to manage flows with keyboard shortcuts for quick switching between aff/neg views.",
     "title": "Debate Flow Website",
     "description": [
       "I made this website after judging debate tournaments for a couple years and realized it was very annoying to keep track of my flows. I also wanted a better way to make flows and be able to transition to the aff/neg flow quickly. So I added keyboard shortcuts to make it easier to switch between flows.",

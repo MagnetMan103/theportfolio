@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../components/header";
 import About from "~/components/about";
 import Footer from "~/components/footer";
@@ -37,11 +38,27 @@ export default function HomePage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="container mx-auto px-4 py-12 text-center">
-                <AnimatedHeading />
-                <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-                    Engineer, Designer, and Developer building things that matter.
-                </p>
+            <section className="container mx-auto px-4 py-12">
+                <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-12">
+                    {/* Hexapod CAD Image */}
+                    <div className="w-64 h-64 md:w-80 md:h-80 relative flex-shrink-0">
+                        <Image
+                            src="/hexapod/cad.png"
+                            alt="Hexapod CAD Design"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+
+                    {/* Text Content */}
+                    <div className="text-center md:text-left">
+                        <AnimatedHeading />
+                        <p className="text-xl text-gray-700 max-w-2xl">
+                            Engineer, Designer, and Developer building things that matter.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <About />

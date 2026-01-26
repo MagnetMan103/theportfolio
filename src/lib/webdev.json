@@ -1,0 +1,175 @@
+[
+    {
+        "slug": "road-rage",
+        "category": "webdev",
+        "summary": "Design track winning hackathon game. Use computer vision to control a car and navigate a map with procedurally generated roads.",
+        "title": "Road Rage (BigRedHacks '25)",
+        "description": [
+            "This was my team's entry for the 2025 BigRedHacks Hackathon. It uses your laptop camera to track your hands via Mediapipe and OpenCV. Our game is entirely playable without touching the keyboard. Even starting the game is done by tracking a specific hand gesture. The game is entirely rendered in ThreeJS. It features a player car, coins to be collected, NPC cars that can be crashed into, and a procedurally generated road. Road Rage won in the design track category for this hackathon.\n\nA large part of this project leveraged agentic coding techniques. This enabled us to make a relatively complicated game in the 48 hour time span of a hackathon. I think this allowed me to focus on what are the best architecture decisions for such a game. For example, we were debating between using ThreeJS, React Three Fiber, or PixiJS (rendering an isometric view in 2 dimensions) and some prompting let me see that ThreeJS was clearly the most feasible option. \n\nMaybe a slight regret with this project was the handling of physics. At first we were trying to use a physics engine (Rapier for ThreeJS) but I was getting a lot of unexpected behavior with this approach. So we used a hacky solution where we track the position of every object and handle collisions by checking the distance from the player object to other objects. This is definitely not the optimal solution but the game features worked reasonably well. \n"
+        ],
+        "images": [
+            "/roadrage/roadrage1.png",
+            "/roadrage/roadrage2.png"
+        ],
+        "imgAlts": [
+            "Game view",
+            "Home screen"
+        ],
+        "preview": "/roadrage/roadrage1.png",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://roadrager.io"
+            },
+            {
+                "name": "Github Repo",
+                "url": "https://github.com/MagnetMan103/cvdriver"
+            }
+        ],
+        "wide": true,
+        "video": "https://www.youtube.com/embed/kskNUY8UvCo"
+    },
+    {
+        "slug": "bigredhacks-2024",
+        "category": "webdev",
+        "summary": "2nd place hackathon mobile app that generates personalized songs based on user mood and feelings.",
+        "title": "Nocturne (BigRedHacks '24)",
+        "description": [
+            "This app (Nocturne) was created for the Big Red Hacks 2024 Hackathon. It lets users pick a mood and type their feelings to generate a song that adapts to their emotions.",
+            "My team won 2nd place for the overall Hackathon of best fitting the theme of Lifestyle. We all got nice pairs of beats headphones as our prize.",
+            "I used React Native + Expo + Typescript, and my team used a Flask Backend."
+        ],
+        "images": [
+            "/BigRedHacks2024/NocturneMain.png",
+            "/BigRedHacks2024/NocturneHome.png",
+            "/BigRedHacks2024/NocturneMoods.png",
+            "/BigRedHacks2024/NocturneSettings.png",
+            "/BigRedHacks2024/BigRedHacks1.jpg",
+            "/BigRedHacks2024/BigRedHacks2.jpeg"
+        ],
+        "imgAlts": [
+            "Nocturne Main Page",
+            "Nocturne Home Page",
+            "Nocturne Mood Selection",
+            "Nocturne Settings",
+            "BigRedHacks Photo 1",
+            "BigRedHacks Photo 2"
+        ],
+        "preview": "/BigRedHacks2024/NocturnePreview.png",
+        "links": [
+            {
+                "name": "Demo Video",
+                "url": "https://youtube.com/shorts/wMVuX9QJPM8?feature=shared"
+            },
+            {
+                "name": "Github Repo",
+                "url": "https://github.com/MagnetMan103/Nocturne"
+            },
+            {
+                "name": "Devpost",
+                "url": "https://devpost.com/software/nocturne-uytmso"
+            }
+        ]
+    },
+    {
+        "slug": "rcareworld-hackathon",
+        "category": "webdev",
+        "summary": "1st place hackathon app helping Alzheimer's patients remember life events through AI-generated stories.",
+        "title": "Vividly (RCareWorld Hackathon '24)",
+        "description": [
+            "Vividly was created for the RCareWorld 2024 Hackathon. It helps people with alzheimers remember important events in their life by saving important events and images. The app also lets users AI generate a story of a person's life based on the events they have saved. ",
+            "My team won 1st place for the Hackathon track of Inclusive Solutions to Existing Systems. We received a $500 prize.",
+            "I used React Native + Expo + Typescript, and the backend was with Flask."
+        ],
+        "images": [
+            "/RCareWorld/VividlyHome.png",
+            "/RCareWorld/VividlyCreate.png",
+            "/RCareWorld/VividlyEvent.png",
+            "/RCareWorld/VividlyGPT.png"
+        ],
+        "imgAlts": [
+            "Vividly Main Page",
+            "Vividly Create Page",
+            "Vividly Event Page",
+            "Nocturne GPT Page"
+        ],
+        "preview": "/RCareWorld/VividlyPreview.png",
+        "links": [
+            {
+                "name": "Github Repo",
+                "url": "https://github.com/MagnetMan103/Vividly"
+            }
+        ]
+    },
+    {
+        "slug": "2500words",
+        "category": "webdev",
+        "summary": "Chrome extension for vocabulary learning with instant translations and flashcard review using Google Translate API.",
+        "title": "2500words Chrome Extension",
+        "description": [
+            "2500words allows you to refine your vocabulary in a foreign language. It adds an option on right click to \"Add {word} to 2500words.\" Doing so creates an immediate translation on the page. The word will also be saved for review which can be accessed by clicking on the extension icon.",
+            "The translations are made with Google Translate's API and your words are stored locally.",
+            "Made with pure JS / HTML / CSS"
+        ],
+        "images": [
+            "/2500words/2500preview.png",
+            "/2500words/2500example.png",
+            "/2500words/2500list.png",
+            "/2500words/2500flash.png",
+            "/2500words/2500settings.png"
+        ],
+        "imgAlts": [
+            "2500words preview",
+            "2500words example",
+            "2500words list",
+            "2500words flashcards",
+            "2500words settings"
+        ],
+        "preview": "/2500words/2500preview.png",
+        "links": [
+            {
+                "name": "Chrome Extension",
+                "url": "https://chromewebstore.google.com/detail/2500words/oofdlpnfhhbepaebanohecbocjmbkfmd?authuser=0&hl=en"
+            },
+            {
+                "name": "Github Repo",
+                "url": "https://github.com/MagnetMan103/2500words"
+            },
+            {
+                "name": "Demo Video",
+                "url": "https://youtu.be/5xAacWVHRWU"
+            }
+        ],
+        "wide": true
+    },
+    {
+        "slug": "debate-flow",
+        "category": "webdev",
+        "summary": "Web app for debate judges to manage flows with keyboard shortcuts for quick switching between aff/neg views.",
+        "title": "Debate Flow Website",
+        "description": [
+            "I made this website after judging debate tournaments for a couple years and realized it was very annoying to keep track of my flows. I also wanted a better way to make flows and be able to transition to the aff/neg flow quickly. So I added keyboard shortcuts to make it easier to switch between flows.",
+            "The stack is React + NextJS + Typescript + TailwindCSS"
+        ],
+        "images": [
+            "/DebateFlow/flowHome.png",
+            "/DebateFlow/flowFlow.png"
+        ],
+        "imgAlts": [
+            "Flow Home Page",
+            "Flow Page"
+        ],
+        "preview": "/DebateFlow/flowHome.png",
+        "links": [
+            {
+                "name": "Website",
+                "url": "https://debateflow.vercel.app"
+            },
+            {
+                "name": "Github Repo",
+                "url": "https://github.com/MagnetMan103/debateflow"
+            }
+        ],
+        "wide": true
+    }
+]

@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-import data from "~/lib/data.json";
 
 export interface Project {
     slug: string;
@@ -17,24 +16,20 @@ export interface Project {
 }
 
 interface ProjectGridProps {
-    category?: string;
+    projects: Project[];
     limit?: number;
 }
 
-export default function ProjectGrid({ category, limit }: ProjectGridProps) {
-    let projects = data as Project[];
-
-    if (category) {
-        projects = projects.filter((p) => p.category === category);
-    }
+export default function ProjectGrid({ projects, limit }: ProjectGridProps) {
+    let displayProjects = projects;
 
     if (limit) {
-        projects = projects.slice(0, limit);
+        displayProjects = displayProjects.slice(0, limit);
     }
 
     return (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
+            {displayProjects.map((project) => (
                 <ProjectCard
                     key={project.slug}
                     slug={project.slug}

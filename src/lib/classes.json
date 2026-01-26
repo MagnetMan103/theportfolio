@@ -2,16 +2,16 @@
   {
     "slug": "mae-3260-wheeled-biped",
     "category": "class",
-    "summary": "Modeled and simulated a wheeled biped robot's dynamics in Mujoco, implementing balance and movement control systems.",
+    "summary": "Modeled and simulated a wheeled biped robot's dynamics in MuJoCo, implementing balance and movement control systems.",
     "title": "MAE 3260: Simulating a wheeled biped robot",
     "description": [
-      "This was the final group project for my system dynamics class, where we modeled the dynamics of a wheeled biped robot. The two primary goals were having the robot balance without falling over, and having the robot move to a desired location. I was tasked with simulating our robot control model in Mujoco. A demo video of the final result can be found below, as well as our engineering writeup. The github repo with the simulation code is also attached.\n"
+      "This was the final group project for my system dynamics class, where we modeled the dynamics of a wheeled biped robot. The two primary goals were having the robot balance without falling over, and having the robot move to a desired location. I was tasked with simulating our robot control model in MuJoCo. A demo video of the final result can be found below, as well as our engineering writeup. The github repo with the simulation code is also attached.\n"
     ],
     "images": [
       "/classes/MAE3260/robot.png"
     ],
     "imgAlts": [
-      "Robot in Mujoco simulation"
+      "Robot in MuJoCo simulation"
     ],
     "preview": "/classes/MAE3260/robot.png",
     "links": [

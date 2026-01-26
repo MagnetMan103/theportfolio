@@ -1,0 +1,115 @@
+[
+    {
+        "slug": "le-mini-hoop",
+        "category": "engineering",
+        "summary": "A mini basketball hoop with an automatic return system powered by a 600 rpm motor, featuring laser-cut components and 3D printed flywheels.",
+        "title": "Le mini hoop",
+        "description": [
+            "Le mini hoop is a mini basketball hoop with an automatic return system powered by 600 rpm motor.",
+            "This was my team project from my mechanical design class, we set out to reduce the friction of having to pick up the basketball after every shot.",
+            "The frame was laser cut with acrylic, the ramp was a laser cut out of wood with a living hinge design (to flex as a ramp), and the flywheels & gears were 3D printed with PLA.",
+            "When fully spun, the flywheels can launch the ball to the person's chest up to ~10 feet.",
+            "We ran into some roadblocks. We wanted to use a motion sensor to turn on the motor when the ball was in the funnel, but it took too long for the flywheels to spin up. So the motor was controlled with an on/off switch. Also, we didn't plan out fully how the electrical components would fit in the assembly, so there was a bit of a mess with wires in the end product."
+        ],
+        "images": [
+            "/lemini/leminiCad.jpg",
+            "/lemini/leMiniAssemble.jpg",
+            "/lemini/leminiRamp.jpg",
+            "/lemini/leminiTopDown.png",
+            "/lemini/LeMiniPreview.jpg"
+        ],
+        "imgAlts": [
+            "Le Mini Preview",
+            "Le Mini Assemble",
+            "Le Mini CAD",
+            "Le Mini Ramp",
+            "Le Mini Top Down"
+        ],
+        "preview": "/lemini/LeMiniPreview.jpg",
+        "links": []
+    },
+    {
+        "slug": "fusion-copilot",
+        "category": "engineering",
+        "summary": "A Fusion 360 add-in that uses AI to generate CAD designs from natural language queries.",
+        "title": "Fusion Copilot (CAD+AI)",
+        "description": [
+            "Fusion Copilot is a Fusion add-in where users can enter a query for what they want to build, and the add-in will make the design for them",
+            "Currently, the add-in sends a request to a ChatGPT model that has been tuned to use the Fusion python API and receives executable Fusion API code back. The add-in then executes the code in Fusion.",
+            "Right now, there is a limitation in how complex the designs can be.",
+            "You can check out the demo to see its current state."
+        ],
+        "images": [
+            "/FusionCopilot/FusionDialog.png",
+            "/FusionCopilot/FusionResult.png",
+            "/FusionCopilot/FusionCode.png"
+        ],
+        "imgAlts": [
+            "Fusion Dialog",
+            "Fusion Result",
+            "Fusion Code"
+        ],
+        "preview": "/FusionCopilot/FusionDialog.png",
+        "links": [
+            {
+                "name": "Demo Video",
+                "url": "https://youtu.be/2eUuA5oFyXw"
+            }
+        ],
+        "wide": true
+    },
+    {
+        "slug": "ansys-codefest",
+        "category": "engineering",
+        "summary": "Optimized a dwarven bridge design using PyAnsys, reducing cost by 50% through programmatic material and cross-section simulation.",
+        "title": "Ansys Codefest",
+        "description": [
+            "I participated in the 2024 Ansys Codefest where teams had 8 hours to optimize the cost of a dwarven bridge (with 95 nodes).",
+            "To minimize cost, I sorted the beams by the least stress, and programmatically simulated different materials and cross-sections corresponding to each beams' stress.",
+            "The idea was that we would use cheaper materials & cross-sections until all the beams are near their yield stress.",
+            "My team was able to reduce the cost of the bridge by 50%",
+            "This project used PyAnsys API and simulation tools."
+        ],
+        "images": [
+            "/pyAnsys/bridgeProblem.png",
+            "/pyAnsys/bridgeData.png",
+            "/pyAnsys/bridgeResult.png"
+        ],
+        "imgAlts": [
+            "Bridge Problem",
+            "Bridge Data",
+            "Bridge Result"
+        ],
+        "preview": "/pyAnsys/bridgeResult.png",
+        "links": [
+            {
+                "name": "Ansys Credential",
+                "url": "https://www.credly.com/badges/12662d57-2d02-4040-8fbd-0ae589597069/linked_in_profile"
+            }
+        ],
+        "wide": true
+    },
+    {
+        "slug": "realflight-simulations",
+        "category": "engineering",
+        "summary": "Created an accurate RealFlight Evolution model of a 300mph+ drone for software-in-the-loop testing with INAV.",
+        "title": "RealFlight Simulations",
+        "description": [
+            "I added a model of my project team's drone into RealFlight Evolution. I used Blender to abstract our drone's faces so it could be imported into RealFlight. I had to map the geometry and physics to RealFlight, so things like the drone's center of mass and thrust would be realistic.",
+            "My project team is making a 300mph+ drone, so this accurate RealFlight model was important for the CS team to integrate software in the loop tests using INAV."
+        ],
+        "images": [
+            "/RealFlight/closerDrone.png",
+            "/RealFlight/flyingDrone.png",
+            "/RealFlight/dronePhysics.png"
+        ],
+        "imgAlts": [
+            "Close Up Drone",
+            "Flying Drone",
+            "Drone Physics"
+        ],
+        "preview": "/RealFlight/dronePreview.png",
+        "links": [],
+        "wide": true
+    }
+]

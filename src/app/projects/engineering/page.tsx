@@ -2,6 +2,8 @@ import { type Metadata } from "next";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 import ProjectGrid from "~/components/projects/ProjectGrid";
+import engineeringData from "~/lib/engineering.json";
+import { type Project } from "~/components/projects/ProjectGrid";
 
 export const metadata: Metadata = {
     title: "Engineering Projects | Alan Munschy",
@@ -21,7 +23,7 @@ export default function EngineeringProjectsPage() {
                         CAD designs, simulations, and mechanical systems I&apos;ve built.
                     </p>
                 </div>
-                <ProjectGrid category="engineering" />
+                <ProjectGrid projects={engineeringData as Project[]} />
             </main>
             <Footer />
         </div>

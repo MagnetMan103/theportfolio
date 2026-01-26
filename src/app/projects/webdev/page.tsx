@@ -2,6 +2,8 @@ import { type Metadata } from "next";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 import ProjectGrid from "~/components/projects/ProjectGrid";
+import webdevData from "~/lib/webdev.json";
+import { type Project } from "~/components/projects/ProjectGrid";
 
 export const metadata: Metadata = {
     title: "Web Development Projects | Alan Munschy",
@@ -21,7 +23,7 @@ export default function WebDevProjectsPage() {
                         React apps, Chrome extensions, and hackathon winners.
                     </p>
                 </div>
-                <ProjectGrid category="webdev" />
+                <ProjectGrid projects={webdevData as Project[]} />
             </main>
             <Footer />
         </div>

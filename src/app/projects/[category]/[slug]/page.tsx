@@ -5,7 +5,8 @@ import Image from "next/image";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 import { Badge } from "~/components/ui/badge";
-import data from "~/lib/data.json";
+import engineeringData from "~/lib/engineering.json";
+import webdevData from "~/lib/webdev.json";
 import classData from "~/lib/classes.json";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -52,8 +53,8 @@ type Props = {
     }>;
 };
 
-// Combine all projects from both data sources
-const allProjects = [...(data as Project[]), ...(classData as Project[])];
+// Combine all projects from all data sources
+const allProjects = [...(engineeringData as Project[]), ...(webdevData as Project[]), ...(classData as Project[])];
 
 export async function generateStaticParams() {
     return allProjects.map((project) => ({
@@ -136,8 +137,8 @@ export default async function ProjectPage({ params }: Props) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 shadow-sm ${index === 0
-                                            ? "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md"
-                                            : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400"
+                                        ? "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md"
+                                        : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400"
                                         }`}
                                 >
                                     {link.name}

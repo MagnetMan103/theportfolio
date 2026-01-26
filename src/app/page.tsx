@@ -25,7 +25,7 @@ export default function HomePage() {
         {
             href: "/classes",
             label: "Class Projects",
-            description: "Academic coursework and university projects",
+            description: "Important projects and assignments from my classes",
             icon: FaGraduationCap,
             gradient: "from-purple-500 to-purple-700",
         },

@@ -51,12 +51,9 @@
         ],
         "preview": "/FusionCopilot/FusionDialog.png",
         "links": [
-            {
-                "name": "Demo Video",
-                "url": "https://youtu.be/2eUuA5oFyXw"
-            }
         ],
-        "wide": true
+        "wide": true,
+        "video": "https://www.youtube.com/embed/2eUuA5oFyXw"
     },
     {
         "slug": "ansys-codefest",

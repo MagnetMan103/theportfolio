@@ -4,6 +4,7 @@ import About from "~/components/about";
 import Footer from "~/components/footer";
 import Resume from "~/components/resume";
 import Special from "~/components/special";
+import AnimatedHeading from "~/components/AnimatedHeading";
 import { FaCog, FaCode, FaGraduationCap } from "react-icons/fa";
 
 export default function HomePage() {
@@ -37,9 +38,7 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="container mx-auto px-4 py-12 text-center">
-                <h1 className="text-5xl font-bold text-gray-900 mb-4 md:text-6xl">
-                    Hi, I&apos;m <span className="text-blue-600">Alan Munschy</span>
-                </h1>
+                <AnimatedHeading />
                 <p className="text-xl text-gray-700 max-w-2xl mx-auto">
                     Engineer, Designer, and Developer building things that matter.
                 </p>

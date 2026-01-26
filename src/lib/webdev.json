@@ -134,13 +134,10 @@
             {
                 "name": "Github Repo",
                 "url": "https://github.com/MagnetMan103/2500words"
-            },
-            {
-                "name": "Demo Video",
-                "url": "https://youtu.be/5xAacWVHRWU"
             }
         ],
-        "wide": true
+        "wide": true,
+        "video": "https://www.youtube.com/embed/5xAacWVHRWU"
     },
     {
         "slug": "debate-flow",

@@ -7,7 +7,7 @@ export default function About() {
         <h1 className="text-4xl font-bold ml-10 lg:ml-0">Who am I?</h1>
             <div className="flex flex-col p-4 lg:p-0 lg:flex-row lg:items-center lg:justify-start w-full">
                 <div className={"break-words lg:w-1/2 ml-4 mr-4 lg:m-0"}>
-                    <p className="text-xl mt-0">I&#39;m an 3rd year student pursuing a B.S. in mechanical
+                    <p className="text-xl mt-0">I&#39;m a 3rd year student pursuing a B.S. in mechanical
                         engineering at Cornell University.</p>
                     <p className="text-xl mt-3">
                     At Cornell, I&#39;m working in the biorobotics lab to make a trash collecting hexapod (a 6-legged robot).

@@ -6,6 +6,7 @@ import Footer from "~/components/footer";
 import Resume from "~/components/resume";
 import Special from "~/components/special";
 import AnimatedHeading from "~/components/AnimatedHeading";
+import GlassCard from "~/components/GlassCard";
 import { FaCog, FaCode, FaGraduationCap } from "react-icons/fa";
 
 export default function HomePage() {
@@ -81,19 +82,18 @@ export default function HomePage() {
                             href={category.href}
                             className="group block"
                         >
-                            <div className={`relative overflow-hidden rounded-xl bg-gradient-to-br ${category.gradient} p-8 text-white shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1`}>
-                                <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-white/10 blur-2xl" />
-                                <category.icon className="h-12 w-12 mb-4 opacity-90" />
-                                <h3 className="text-2xl font-bold mb-2">
+                            <GlassCard gradient={category.gradient}>
+                                <category.icon className="h-12 w-12 mb-4 opacity-90 drop-shadow-lg" />
+                                <h3 className="text-2xl font-bold mb-2 drop-shadow-md">
                                     {category.label}
                                 </h3>
-                                <p className="text-white/80 mb-4">
+                                <p className="text-white/80 mb-4 drop-shadow-sm">
                                     {category.description}
                                 </p>
-                                <span className="inline-flex items-center text-sm font-medium group-hover:underline">
+                                <span className="inline-flex items-center text-sm font-medium group-hover:underline drop-shadow-sm">
                                     View Projects →
                                 </span>
-                            </div>
+                            </GlassCard>
                         </Link>
                     ))}
                 </div>

@@ -13,9 +13,12 @@ export default function About() {
                             engineering at Cornell University.
                         </p>
                         <p className="text-xl mt-4">
-                            At Cornell, I&#39;m working in the biorobotics lab to make a trash collecting hexapod (a 6-legged robot).
-                            I&#39;m also a team lead for Cornell University&#39;s Physical Intelligence club where we are making a hexapod
-                            to coordinate with a drone for navigation and sampling tasks.
+                            At Cornell, I&#39;m working in the biorobotics lab to make a trash collecting hexapod (a
+                            6-legged robot).
+                            I&#39;m also a team lead for Cornell University&#39;s Physical Intelligence club where we
+                            are making a hexapod
+                            to coordinate with a drone for navigation and sampling tasks. And I&#39;m on Cornell&#39;s
+                            Autonomous Drone Project Team.
                         </p>
                         <p className="text-xl mt-4">
                             Here are some fun facts. I&#39;m from Miami.

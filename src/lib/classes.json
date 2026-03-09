@@ -29,6 +29,21 @@
     "video": "https://www.youtube.com/embed/kZ9yXSptH3A?si=U4LrUajHumJ_aHPc"
   },
   {
+    "slug": "mae-3240-hw2",
+    "category": "class",
+    "summary": "Heat transfer reflection focusing on the challenges and practical applications of thermal resistance concepts.",
+    "title": "MAE 3240: Water Heater Analysis",
+    "description": [
+      "This was a homework for my heat transfer class when we were learning about heat transfer networks and how to determine temperatures from convection/conduction/radiation. For example, problem 1 had us calculating the temperature of a water heater given ambient conditions. Finding what the temperature would be in steady state conditions is definitely useful for my interests in robotics as there are many electrical components that have heat concerns (such as the onbaord computers, microcontrollers, and the motors). Using the heat transfer analysis, I can make rough estimations for what the expected temperature of my systems would be and how we could use solutions such as heat sinks to remedy this."
+    ],
+    "images": [],
+    "imgAlts": [],
+    "preview": "/classes/mae3240/heattransfer.png",
+    "links": [],
+    "pdf": "/classes/mae3240/hw2_mae3240.pdf",
+    "wide": true
+  },
+  {
     "slug": "mae-3230-pneumatic-wrench",
     "category": "class",
     "summary": "Dissected and analyzed a pneumatic impact wrench in a fluid dynamics context, calculating maximum torque of 900 lb*in.",

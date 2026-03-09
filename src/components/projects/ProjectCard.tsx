@@ -9,6 +9,7 @@ export interface ProjectCardProps {
   title: string;
   summary: string;
   preview: string;
+  pdf?: string;
 }
 
 const categoryLabels: Record<string, string> = {

@@ -26,6 +26,7 @@ interface Project {
     wide?: boolean;
     caption?: boolean;
     video?: string;
+    pdf?: string;
 }
 
 const categoryLabels: Record<string, string> = {
@@ -228,6 +229,32 @@ export default async function ProjectPage({ params }: Props) {
                                 allowFullScreen
                                 loading="lazy"
                             />
+                        </div>
+                    </section>
+                )}
+
+                {/* PDF Viewer */}
+                {project.pdf && (
+                    <section className="mb-10">
+                        <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                            Document
+                        </h2>
+                        <div className="w-full h-[800px] overflow-hidden rounded-xl border-4 border-blue-300 shadow-lg bg-white">
+                            <iframe
+                                src={`${project.pdf}#toolbar=0&navpanes=0`}
+                                className="w-full h-full border-none"
+                                title="Project PDF Document"
+                            />
+                        </div>
+                        <div className="mt-4 text-center">
+                            <a
+                                href={project.pdf}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-sm"
+                            >
+                                Open Full Screen <FaExternalLinkAlt className="h-3 w-3" />
+                            </a>
                         </div>
                     </section>
                 )}

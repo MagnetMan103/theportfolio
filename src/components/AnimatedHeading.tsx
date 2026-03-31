@@ -19,7 +19,7 @@ export default function AnimatedHeading() {
     ];
 
     return (
-        <h1 className="text-5xl font-bold text-gray-900 mb-4 md:text-6xl">
+        <h1 className="text-5xl font-bold text-gray-900 mb-4 md:text-6xl text-center">
             {words.map((word, index) => (
                 <span
                     key={index}

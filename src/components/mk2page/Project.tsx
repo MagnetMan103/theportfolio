@@ -15,8 +15,8 @@ export default function Project(props: ProjectProps) {
     if (props.flipped) {
         return (
             <div className="w-full md:w-full lg:w-3/4 p-4">
-                <div className="flex flex-row bg-white rounded-lg shadow-md overflow-hidden">
-                    <div className={"flex flex-col"}>
+                <div className="flex flex-col-reverse md:flex-row items-center md:items-stretch bg-white rounded-lg shadow-md overflow-hidden">
+                    <div className={"flex flex-col flex-grow"}>
                     <div className="p-4">
                         <h3 className="text-xl font-bold mb-2">{props.title}</h3>
                         <p className="text-gray-700">{props.description}</p>
@@ -43,7 +43,7 @@ export default function Project(props: ProjectProps) {
     } else {
         return (
             <div className="w-full md:w-full lg:w-3/4 p-4">
-                <div className="flex flex-row bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center md:items-stretch bg-white rounded-lg shadow-md overflow-hidden">
                     <Image
                         src={props.thumbnail}
                         alt={props.title}
@@ -52,7 +52,7 @@ export default function Project(props: ProjectProps) {
                         className="rounded-t-md object-contain bg-black px-1 pt-1"
                         style={{minWidth: '245px', minHeight: '245px', maxWidth: '245px', maxHeight: '245px'}}
                     />
-                    <div className={"flex flex-col"}>
+                    <div className={"flex flex-col flex-grow"}>
                         <div className="p-4">
                             <h3 className="text-xl font-bold mb-2">{props.title}</h3>
                             <p className="text-gray-700">{props.description}</p>

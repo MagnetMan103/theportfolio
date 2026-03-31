@@ -78,7 +78,37 @@ export default function Header() {
                             </Link>
                         ))}
                     </div>
+
+                    {/* Mobile Menu Button */}
+                    <div className="md:hidden flex items-center">
+                        <button
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            className="p-2 text-white hover:text-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-md transition-colors"
+                            aria-label="Toggle menu"
+                        >
+                            {mobileMenuOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
+                        </button>
+                    </div>
                 </div>
+
+                {/* Mobile Navigation Dropdown */}
+                {mobileMenuOpen && (
+                    <div className="md:hidden py-3 border-t border-blue-500/30">
+                        <div className="flex flex-col space-y-1">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-md transition duration-150 ${link.active ? "text-blue-100 bg-white/10 font-medium" : "text-white hover:bg-white/5"}`}
+                                >
+                                    <link.icon className="h-5 w-5" />
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
         </nav>
     );

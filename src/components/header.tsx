@@ -8,7 +8,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar"
 import { Button } from "~/components/ui/button";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { HiMenu, HiX } from "react-icons/hi";
-import { FaCog, FaCode, FaGraduationCap } from "react-icons/fa";
+import { FaCog, FaCode, FaGraduationCap, FaArchive } from "react-icons/fa";
+import {FaRegFile} from "react-icons/fa6";
 
 export default function Header() {
     const pathname = usePathname() || "/";
@@ -17,20 +18,22 @@ export default function Header() {
     const isHome = pathname === "/";
     const isEngineering = pathname.startsWith("/projects/engineering");
     const isWebDev = pathname.startsWith("/projects/webdev");
+    const isArchived = pathname === "/archived" || pathname.startsWith("/archived");
     const isClasses = pathname === "/classes" || pathname.startsWith("/classes");
+    const isResume = pathname === "/resume" || pathname.startsWith("/resume");
 
     const navLinks = [
         {
-            href: "/projects/engineering",
-            label: "Engineering",
-            active: isEngineering,
-            icon: FaCog
+            href: "/resume",
+            label: "Resume",
+            active: isResume,
+            icon: FaRegFile
         },
         {
-            href: "/projects/webdev",
-            label: "Web Dev",
-            active: isWebDev,
-            icon: FaCode
+            href: "/archived",
+            label: "Archived",
+            active: isArchived,
+            icon: FaArchive
         },
         {
             href: "/classes",
@@ -74,57 +77,8 @@ export default function Header() {
                                 {link.label}
                             </Link>
                         ))}
-
-                        <div className="ml-4 pl-4 border-l border-blue-500">
-                            <a
-                                href="mailto:alanmunschy@gmail.com"
-                                className="flex items-center gap-2 px-3 py-2 rounded-md transition duration-150 hover:bg-white/10 text-white hover:text-blue-100"
-                            >
-                                <RiSendPlaneFill className="h-4 w-4" />
-                                Email
-                            </a>
-                        </div>
                     </div>
-
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden p-2 rounded-md hover:bg-white/10"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        {mobileMenuOpen ? (
-                            <HiX className="h-6 w-6" />
-                        ) : (
-                            <HiMenu className="h-6 w-6" />
-                        )}
-                    </button>
                 </div>
-
-                {/* Mobile Navigation */}
-                {mobileMenuOpen && (
-                    <div className="md:hidden py-4 border-t border-blue-600">
-                        <div className="flex flex-col gap-2">
-                            {navLinks.map((link) => (
-                                <Link
-                                    key={link.href}
-                                    href={link.href}
-                                    className={linkClass(link.active)}
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    <link.icon className="h-4 w-4" />
-                                    {link.label}
-                                </Link>
-                            ))}
-                            <a
-                                href="mailto:alanmunschy@gmail.com"
-                                className={linkClass(false)}
-                            >
-                                <RiSendPlaneFill className="h-4 w-4" />
-                                Email Me
-                            </a>
-                        </div>
-                    </div>
-                )}
             </div>
         </nav>
     );

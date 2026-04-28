@@ -10,6 +10,7 @@ export interface ProjectProps {
     flipped: boolean;
     writeupLink?: string;
     posterLink?: string;
+    videoLink?: string;
 }
 
 export default function Project(props: ProjectProps) {
@@ -22,11 +23,16 @@ export default function Project(props: ProjectProps) {
                         <h3 className="text-xl font-bold mb-2">{props.title}</h3>
                         <p className="text-gray-700">{props.description}</p>
                     </div>
-                        {(props.writeupLink || props.posterLink) &&
+                        {(props.writeupLink || props.posterLink || props.videoLink) &&
                         <div className={"flex items-center justify-center p-2 gap-2"}>
                             {props.writeupLink && (
                                 <Button variant="outline" onClick={() => window.open(props.writeupLink, "_blank")}>
                                     View Writeup
+                                </Button>
+                            )}
+                            {props.videoLink && (
+                                <Button variant="outline" onClick={() => window.open(props.videoLink, "_blank")}>
+                                    Demo Video
                                 </Button>
                             )}
                             {props.posterLink && (
@@ -65,11 +71,16 @@ export default function Project(props: ProjectProps) {
                             <h3 className="text-xl font-bold mb-2">{props.title}</h3>
                             <p className="text-gray-700">{props.description}</p>
                         </div>
-                        {(props.writeupLink || props.posterLink) &&
+                        {(props.writeupLink || props.posterLink || props.videoLink) &&
                             <div className={"flex items-center justify-center p-2 gap-2"}>
                                 {props.writeupLink && (
                                     <Button variant="outline" onClick={() => window.open(props.writeupLink, "_blank")}>
                                         View Writeup
+                                    </Button>
+                                )}
+                                {props.videoLink && (
+                                    <Button variant="outline" onClick={() => window.open(props.videoLink, "_blank")}>
+                                        Demo Video
                                     </Button>
                                 )}
                                 {props.posterLink && (

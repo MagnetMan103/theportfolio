@@ -11,6 +11,7 @@ const projects: ProjectProps[] = [
         thumbnail: "/hexapod/hex-thumbnail.png",
         flipped: false,
         posterLink: "/poster/poster.pdf",
+        videoLink: "https://youtu.be/H4ViK3dYK4g?si=1_F2bZi6Nr1FIYS4",
     },
     {
         title: "Vision-enabled robotic arm (CMC Makethon '26)",
@@ -57,7 +58,7 @@ export default function Main() {
         <div className={"flex flex-col items-center justify-center mx-auto max-w-6xl"}>
         {projects.map((project, index) => (
             <Project key={index} title={project.title} description={project.description} thumbnail={project.thumbnail} flipped={project.flipped}
-            writeupLink={project.writeupLink} posterLink={project.posterLink}/>
+            writeupLink={project.writeupLink} posterLink={project.posterLink} videoLink={project.videoLink}/>
         ))}
         </div>
         </>

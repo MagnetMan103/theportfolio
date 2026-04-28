@@ -1,4 +1,4 @@
-import Card from "~/components/card";
+import ProjectCard from "~/components/projects/ProjectCard";
 import webdevProjects from "~/lib/webdev.json";
 import engineeringProjects from "~/lib/engineering.json";
 import Header from "~/components/header";
@@ -14,7 +14,7 @@ export default function ArchivedPage() {
                 <div className="container mx-auto px-6 max-w-6xl">
                     <h1 className="text-5xl font-extrabold text-blue-100 mb-4
                         ">
-                        Archived Projects
+                        Past Projects
                     </h1>
                     <p className="text-xl text-blue-100 leading-relaxed max-w-3xl">
                         These are older projects that were important for my learning journey.
@@ -36,19 +36,15 @@ export default function ArchivedPage() {
                         <div className="h-px bg-blue-500/50 flex-grow rounded"></div>
                     </div>
                     
-                    <div className="flex flex-wrap gap-6 justify-center md:justify-start">
-                        {engineeringProjects.map((project, index) => (
-                            <Card 
-                                key={`eng-${index}`}
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {engineeringProjects.map((project) => (
+                            <ProjectCard
+                                key={project.slug}
+                                slug={project.slug}
+                                category={project.category}
                                 title={project.title}
-                                description={project.description}
-                                imgSrc={project.preview || project.images[0] || ""}
-                                imgAlt={project.imgAlts?.[0] || project.title}
-                                images={project.images || []}
-                                imgAlts={project.imgAlts || []}
-                                links={project.links || []}
-                                wide={project.wide}
-                                video={project.video}
+                                summary={project.summary}
+                                preview={project.preview}
                             />
                         ))}
                     </div>
@@ -64,19 +60,15 @@ export default function ArchivedPage() {
                         <div className="h-px bg-blue-500/50 flex-grow rounded"></div>
                     </div>
                     
-                    <div className="flex flex-wrap gap-6 justify-center md:justify-start">
-                        {webdevProjects.map((project, index) => (
-                            <Card 
-                                key={`web-${index}`}
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {webdevProjects.map((project) => (
+                            <ProjectCard
+                                key={project.slug}
+                                slug={project.slug}
+                                category={project.category}
                                 title={project.title}
-                                description={project.description}
-                                imgSrc={project.preview || project.images[0] || ""}
-                                imgAlt={project.imgAlts?.[0] || project.title}
-                                images={project.images || []}
-                                imgAlts={project.imgAlts || []}
-                                links={project.links || []}
-                                wide={project.wide}
-                                video={project.video}
+                                summary={project.summary}
+                                preview={project.preview}
                             />
                         ))}
                     </div>

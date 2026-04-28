@@ -9,6 +9,7 @@ export interface ProjectProps {
     thumbnail: string;
     flipped: boolean;
     writeupLink?: string;
+    posterLink?: string;
 }
 
 export default function Project(props: ProjectProps) {
@@ -21,11 +22,18 @@ export default function Project(props: ProjectProps) {
                         <h3 className="text-xl font-bold mb-2">{props.title}</h3>
                         <p className="text-gray-700">{props.description}</p>
                     </div>
-                        {props.writeupLink &&
+                        {(props.writeupLink || props.posterLink) &&
                         <div className={"flex items-center justify-center p-2 gap-2"}>
-                        <Button variant="outline"
-                                onClick={() => window.open(props.writeupLink, "_blank")}>
-                        View Writeup</Button>
+                            {props.writeupLink && (
+                                <Button variant="outline" onClick={() => window.open(props.writeupLink, "_blank")}>
+                                    View Writeup
+                                </Button>
+                            )}
+                            {props.posterLink && (
+                                <Button variant="outline" onClick={() => window.open(props.posterLink, "_blank")}>
+                                    View Poster
+                                </Button>
+                            )}
                         </div>
                         }
                     </div>
@@ -57,11 +65,18 @@ export default function Project(props: ProjectProps) {
                             <h3 className="text-xl font-bold mb-2">{props.title}</h3>
                             <p className="text-gray-700">{props.description}</p>
                         </div>
-                        {props.writeupLink &&
+                        {(props.writeupLink || props.posterLink) &&
                             <div className={"flex items-center justify-center p-2 gap-2"}>
-                                <Button variant="outline"
-                                        onClick={() => window.open(props.writeupLink, "_blank")}>
-                                    View Writeup</Button>
+                                {props.writeupLink && (
+                                    <Button variant="outline" onClick={() => window.open(props.writeupLink, "_blank")}>
+                                        View Writeup
+                                    </Button>
+                                )}
+                                {props.posterLink && (
+                                    <Button variant="outline" onClick={() => window.open(props.posterLink, "_blank")}>
+                                        View Poster
+                                    </Button>
+                                )}
                             </div>
                         }
                     </div>

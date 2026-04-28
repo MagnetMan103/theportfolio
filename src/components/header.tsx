@@ -31,7 +31,7 @@ export default function Header() {
         },
         {
             href: "/archived",
-            label: "Archived",
+            label: "Past Projects",
             active: isArchived,
             icon: FaArchive
         },

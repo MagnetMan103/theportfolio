@@ -42,8 +42,8 @@ const categoryColors: Record<string, string> = {
 };
 
 const categoryBackLinks: Record<string, string> = {
-    engineering: "/projects/engineering",
-    webdev: "/projects/webdev",
+    engineering: "/archived",
+    webdev: "/archived",
     class: "/classes",
 };
 
@@ -112,7 +112,7 @@ export default async function ProjectPage({ params }: Props) {
                         href={backLink}
                         className="hover:text-blue-600 transition-colors capitalize"
                     >
-                        {categoryLabels[category] ?? category}
+                        {category === 'engineering' || category === 'webdev' ? 'Past Projects' : (categoryLabels[category] ?? category)}
                     </Link>
                     <span className="text-gray-500">/</span>
                     <span className="text-gray-900 font-medium">{project.title}</span>
@@ -302,7 +302,7 @@ export default async function ProjectPage({ params }: Props) {
                         href={backLink}
                         className="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 shadow-sm"
                     >
-                        ← Back to {categoryLabels[category] ?? category} Projects
+                        ← Back to {category === 'engineering' || category === 'webdev' ? 'Past Projects' : `${categoryLabels[category] ?? category} Projects`}
                     </Link>
                 </div>
             </main>
